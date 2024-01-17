@@ -1,0 +1,29 @@
+<div class="admin-container">
+  <h1>Welcome to the Admin Panel</h1>
+
+
+
+  <table>
+      <thead>
+          <tr>
+              <th>UserId</th>
+              <th>UserEmail</th>
+              <th>UserPhoneNb</th>
+              <th>Actions</th>
+          </tr>
+      </thead>
+
+      <tbody>
+          <tr>
+              <td>3</td>
+              <td>kayan@gmail.com</td>
+              <td>81 1223 223</td>
+              <td class="actions">
+                  <a routerLink="/user_details"><button id="viewDetails"><i class="fa-solid fa-circle-info"></i></button></a>
+                  <button  onclick="deleteUser()" id="delete"><i class="fa-solid fa-delete-left"></i></button>
+              </td>
+          </tr>
+
+      </tbody>
+
+  </table>

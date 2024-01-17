@@ -1,0 +1,48 @@
+.discount__container{
+  row-gap: 3.5rem;
+}
+
+.discount__data{
+  text-align: center;
+}
+
+.discount__title{
+  margin-bottom: 1rem;
+}
+
+.discount__description{
+  margin-bottom: 2rem;
+}
+
+.discount__images{
+  display: flex;
+  justify-content: center;
+}
+
+.discount__img-1,
+.discount__img-2{
+  width: 170px;
+}
+
+.discount__img-1{
+  transform: translateX(1rem) rotate(10deg);
+}
+
+.discount__img-2{
+  transform: translateX(-1rem) rotate(10deg);
+}
+
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-family: 'PT Serif', serif;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  transition: box-shadow .4s;
+}
+
+.button:hover{
+  box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4);
+}
+

@@ -1,0 +1,47 @@
+<div class="container">
+
+  <div class="img-container">
+    <img [src]="book.CoverFileName" alt="book_image">
+  </div>
+
+  <div class="book-details-container">
+    <h1 class="book-title">{{ book.Title }}</h1>
+    <div class="author-details">
+      <img class="author-img" [src]="book.AuthorImage" alt="author_image">
+      <span class="author-name">{{ book.Author}}</span>
+    </div>
+    <div class="rating">
+      <div class="new__stars" *ngFor="let star of book.Rating">
+        <i class="ri-star-fill"></i>
+    </div>
+    </div>
+    <p class="book-desc">{{ book.Description}}
+    </p>
+
+    <div class="secondary-details">
+      <div class="details">
+        <h4 class="title">publisher</h4>
+        <span>{{ book.Publisher }}</span>
+      </div>
+      <div class="details">
+        <h4 class="title">first publish</h4>
+        <span>{{ book.FirstPublish }}</span>
+      </div>
+      <div class="details">
+        <h4 class="title">language</h4>
+        <span>{{ book.Language }}</span>
+      </div>
+      <div class="details">
+        <h4 class="title">pages</h4>
+        <span>{{ book.Pages }}</span>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="read-btn">add to read</button>
+      <button class="preview-btn">preview</button>
+    </div>
+
+  </div>
+
+</div>

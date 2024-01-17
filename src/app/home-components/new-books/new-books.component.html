@@ -1,0 +1,51 @@
+<!--==================== NEW BOOKS ====================-->
+<section class="new section" id="new">
+  <h2 class="section__title">
+      New Books
+  </h2>
+
+<div class="new__container container">
+   <div class="new__swiper swiper">
+
+      <div class="swiper-wrapper">
+          <a *ngFor="let book of newBooks" href="#" class="new__card swiper-slide">
+              <img [src]="book.CoverFileName" alt="image" class="new__img">
+
+              <div>
+                  <h2 class="new__title">{{ book.Title }}</h2>
+                  <div class="new__prices">
+                     <span class="new__discount">$7.99</span>
+                     <span class="new__price">{{ book.Price }}</span>
+                  </div>
+
+                  <div *ngFor="let star of book.Rating" class="new__stars">
+                      <i class="ri-star-fill"></i>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+  </div>
+
+  <div class="new__swiper swiper">
+      <div class="swiper-wrapper">
+        <a *ngFor="let book of newBooks" href="#" class="new__card swiper-slide">
+          <img [src]="book.CoverFileName" alt="image" class="new__img">
+          <div>
+              <h2 class="new__title">{{ book.Title }}</h2>
+              <div class="new__prices">
+                 <span class="new__discount">$7.99</span>
+                 <span class="new__price">{{ book.Price }}</span>
+              </div>
+
+              <div *ngFor="let star of book.Rating" class="new__stars">
+                  <i class="ri-star-fill"></i>
+              </div>
+          </div>
+        </a>
+
+      </div>
+  </div>
+
+</div>
+</section>

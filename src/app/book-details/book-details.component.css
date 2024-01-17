@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+*{
+  font-family: 'PT Serif', serif;
+}
+
+.container{
+  display: flex;
+  padding-inline: 30px;
+  padding-block: 40px;
+  justify-content: center;
+  gap: 100px;
+}
+
+.img-container img{
+  width: 30rem;
+  box-shadow: 10px 4px 10px rgb(1 1 1 / 71%);
+}
+
+.book-details-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-title{
+  font-size: 35px;
+  text-transform: capitalize;
+
+}
+
+/**Author**/
+.author-details{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.author-img{
+  width: 50px;
+  border-radius: 10%;
+}
+
+.new__stars{
+  color: var(--first-color);
+}
+
+.secondary-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details{
+  display: flex;
+  gap: 20px;
+}
+
+.title{
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.buttons{
+  display: flex;
+  gap: 30px;
+}
+
+button{
+  display: inline-block;
+  text-transform: capitalize;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding-block: 10px;
+  padding-inline: 20px;
+  transition: box-shadow .4s;
+  border-radius: 4px;
+}
+
+button:hover{
+  box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4);
+}
+
+@media screen and (min-width: 1220px){
+
+  .container{
+    padding-inline: 130px;
+    padding-block: 40px;
+  }
+  .img-container img{
+    width: 40rem;
+  }
+
+}
+
+
